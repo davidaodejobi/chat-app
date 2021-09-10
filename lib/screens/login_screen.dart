@@ -1,5 +1,6 @@
 import 'package:chatty_chat/constants.dart';
 import 'package:chatty_chat/screens/chat_screen.dart';
+import 'package:chatty_chat/services/login/signin_signup.dart';
 import 'package:chatty_chat/widgets/navigation_button.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
   late String password;
   final _auth = FirebaseAuth.instance;
   bool showSpinner = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
